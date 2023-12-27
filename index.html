@@ -25,28 +25,23 @@
         </tr>
         <tr>
           <td>Servicio Cotizado</td>
-          <td>
-                <select id="miLista" name="miLista">
-                    <option value="Medilink">Medilink</option>
-                    <option value="Dentalink">Dentalink</option>
-                </select>
-            <script>
-        // Obtenemos el elemento select
-        var select = document.getElementById("miLista");
-
-        // Creamos una variable para almacenar la opción seleccionada
-        var opcionSeleccionada = "";
-
-        // Agregamos un evento de cambio a la lista desplegable
-        select.addEventListener("change", function() {
-            // Almacena el valor de la opción seleccionada en la variable
-            opcionSeleccionada = select.value;
-            
-            // Puedes hacer algo con la variable aquí, por ejemplo, imprimir su valor
-            console.log("Opción seleccionada: " + opcionSeleccionada);
-        });
-    </script>
-            </td>
+          <td colspan="2" ><select id="servicio" name="miLista">
+              <option value="Medilink">Medilink</option>
+              <option value="Dentalink">Dentalink</option> </select>
+              <script>
+              // Obtenemos el elemento select
+              var select = document.getElementById("miLista");
+              // Creamos una variable para almacenar la opción seleccionada
+              var opcionSeleccionada = "";
+              // Agregamos un evento de cambio a la lista desplegable
+              select.addEventListener("change", function() {
+              // Almacena el valor de la opción seleccionada en la variable
+              opcionSeleccionada = select.value;
+              // Puedes hacer algo con la variable aquí, por ejemplo, imprimir su valor
+              console.log("Opción seleccionada: " + opcionSeleccionada);
+              });
+              </script>
+          </td>
         </tr>
         <tr style="border-top: 2px solid gray;">
           <td>Tipo tarjeta</td>
