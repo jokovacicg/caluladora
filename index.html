@@ -21,10 +21,18 @@
     <div id="calculator-section">
       <table id="calculator">
         <tr>
-          <th colspan="3">Calculadora de comisiones</th>
+          <th colspan="3">¿Qué incluye la tarifa?</th>
         </tr>
         <tr>
-          <td>Volumen venta POS</td>
+          <td>Servicio Cotizado</td>
+          <td>
+                <select id="miLista" name="miLista">
+                    <option value="opcion1">Opción 1</option>
+                    <option value="opcion2">Opción 2</option>
+                    <option value="opcion3">Opción 3</option>
+                    <option value="opcion4">Opción 4</option>
+                </select>
+            </td>
           <td colspan="2"><input type="text" id="volumenVentaPOS" placeholder="Ej. $5.000.000" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency"/></td>
         </tr>
         <tr style="border-top: 2px solid gray;">
