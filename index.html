@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta lang="es_CL">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POS Commission Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="main-container">
+    <!-- Logos -->
+    <div id="company-logos">
+      <img src="Logos.png" id="company-logo">
+    </div>
+    <!-- Title -->
+    <div id="page-title">
+      <h1>Recibe pagos con tu POS integrado a tu plataforma</h1>
+    </div>
+    <!-- Calculator Section -->
+    <div id="calculator-section">
+      <table id="calculator">
+        <tr>
+          <th colspan="3">Calculadora de comisiones</th>
+        </tr>
+        <tr>
+          <td>Volumen venta POS</td>
+          <td colspan="2"><input type="text" id="volumenVentaPOS" placeholder="Ej. $5.000.000" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency"/></td>
+        </tr>
+        <tr style="border-top: 2px solid gray;">
+          <td>Tipo tarjeta</td>
+          <td><em>Débito</em></td>
+          <td><em>Crédito</em></td>
+        </tr>
+        <tr>
+          <td>Participación ventas POS (%)</td>
+          <td><input type="text" data-type='percentage' id="participacionTD" placeholder="Ej. 65%"/></td>
+          <td><input type="text" data-type='percentage'id="participacionTC" placeholder="Ej. 65%"/></td>
+        </tr>
+        <tr>
+          <td>Comisión variable competencia (%)</td>
+          <td><input type="text" data-type='percentage' id="comisionVarCompTD" placeholder="Ej. 0,96%"/></td>
+          <td><input type="text" data-type='percentage' id="comisionVarCompTC" placeholder="Ej. 1,96%"/></td>
+        </tr>
+        <tr>
+          <td>Comisión fija competencia (UF)</td>
+          <td><input type="text" id="comisionFijaCompUFTD" placeholder="Ej. 0,002" /></td>
+          <td><input type="text" id="comisionFijaCompUFTC" placeholder="Ej. 0,002" /></td>
+        </tr>
+        <tr>
+          <td>Comisión total competencia </td>
+          <td id="comisionTotalCompTD">0%</td>
+          <td id="comisionTotalCompTC">0%</td>
+        </tr>
+        <tr style="border-top: 2px solid gray;">
+          <td>Comisión Healthatom</td>
+          <td><input type="text" data-type='percentage' id="comisionHealthatomTD" placeholder="Ej. 0,96%" /></td>
+          <td><input type="text" data-type='percentage' id="comisionHealthatomTC" placeholder="Ej. 0,96%" /></td>
+        </tr>
+        <tr style="border-top: 2px solid gray;">
+          <td>Total Competencia</td>
+          <td colspan="2" id="totalTbk">$0</td>
+        </tr>
+        <tr>
+          <td>Total Healthatom</td>
+          <td colspan="2" id="totalHealthatom">$0</td>
+        </tr>
+        <tr>
+          <td style="background-color: lightblue;">Diferencia mensual</td>
+          <td colspan="2" id="sobrecostoMensual" style="background-color: lightblue;">$0</td>
+        </tr>
+      </table>
+      <button onclick="calculateCommissions()">Calcular</button>
+      <div id="error-message" style="color: red; text-align: center;"></div>
+    </div>
+
+    <!-- Benefits Section -->
+    <div id="benefits-section">
+      <h2>Qué es un POS integrado?</h2>
+      <div class="benefit">
+        <p>En alianza con Klap desarrollamos una solución para <b>sincronizar automáticamente la máquina POS con tu plataforma</b> Dentalink y Medilink. Esto te permite cobrar directamente desde tu plataforma, sin necesidad de <b>ingresar los montos manualmente</b> en el POS, y <b>registrando automáticamente</b> toda la información de la venta.</p>
+      </div>
+      <h2>Por qué el POS integrado es mejor que el POS tradicional?</h2>
+      <div class="benefit">
+        <h3>Cuadrar tus ventas nunca fue tan simple</h3>
+        <p> Este producto soluciona los problemas de conciliación y cuadratura de caja de tu clínica, ya que al estar sincronizado con tu plataforma, <b>eliminas los errores de digitación</b> y siempre cobras el <b>monto correspondiente a la atención entregada.</b></p>
+      </div>
+      <div class="benefit">
+        <h3>Más control sobre tus ingresos</h3>
+        <p>El POS integrado te ayuda de manera inmediata a ver las ventas con tarjeta en tu plataforma, sin necesidad de <b>registrarlas manualmente</b> o de consultar otro sitio. Puedes ver toda la <b>información sincronizada en un mismo lugar!</b></p>
+      </div>
+      <div class="benefit">
+        <h3>Mejor experiencia para tus pacientes</h3>
+        <p>Reduce hasta en un <b>50% el tiempo de cobro</b> en la recepción y elimina los errores del proceso, mejorando la <b>calidad y eficiencia de la atención.</b></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-47FEHZ7964"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-47FEHZ7964');
+  </script>
+</body>
+</html>

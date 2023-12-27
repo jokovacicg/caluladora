@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost');
+
+body {
+  font-family: Jost, sans-serif;
+  background-color: white;
+  padding: 20px;
+}
+
+#calculator {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#calculator th,
+#calculator td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+#calculator th {
+  background-color: #00468B;
+  color: white;
+  font-size: 18px;
+}
+
+#calculator td input {
+  width: 90%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  text-align: right;
+}
+
+#calculator tr:nth-child(even) td {
+  background-color: #f8f8f8;
+}
+
+#calculator tr:nth-child(odd) td {
+  background-color: #f8f8f8;
+}
+
+#calculator td:nth-child(1) {
+  text-align: left;
+  font-weight: bold;
+}
+
+button {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for the result cells to differentiate from input cells */
+#calculator .result {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Highlight the input cells to differentiate them from the calculated cells */
+#calculator td input {
+  background-color: #ffffff;
+}
+
+#benefits-section {
+  align-content: center;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#benefits-section h2 {
+  text-align: center;
+  color: #00468B;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.benefit {
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.benefit h3 {
+  color: #00468B;
+  margin-bottom: 5px;
+}
+
+.benefit p {
+  color: #555;
+}
+
+#calculator-section, #benefits-section {
+  flex-basis: 48%; /* Adjusts the width of each section */
+  padding: 10px;
+}
+
+/* Existing styles for #benefits-section and other elements */
+
+/* Additional media query for responsive design (optional) */
+@media (max-width: 768px) {
+  #main-container {
+    flex-direction: column;
+  }
+
+  #calculator-section, #benefits-section #page-title {
+    flex-basis: 100%;
+  }
+}
+
+#company-logo {
+  width: auto; /* Adjust the logo width as needed */
+  height: 60px;
+  display: block;
+}
+
+#page-title h1 {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  color: #00468B;
+}
+
