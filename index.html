@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta lang="es_CL">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora de precios2.0</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <head> <!--Titulo pestaña-->
+    <meta charset="UTF-8">
+    <meta lang="es_CL">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de precios</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
-<body>
+<body><!--cuerpo de la pagina-->
   <div id="main-container">
     <!-- Logos -->
     <div id="company-logos">
@@ -18,10 +18,7 @@
     <div id="page-title">
       <h1>Calculadora de precios</h1>
     </div>
-  <!-- tabla principal -->
-    <table>
-    <tr>
-    <td >
+
     <!-- Calculator Section -->
     <div id="calculator-section">
       <table id="calculator">
@@ -98,11 +95,11 @@
           <td ><input type="number" id="videoconsulta" placeholder="Ej. 1"/></td>
         </tr>
       </table>
+
       <button onclick="calculateCommissions()">Calcular</button>
       <div id="error-message" style="color: red; text-align: center;"></div>
     </div>
-    </td>     
-  <td>
+
     <!-- Tabla precios planes frecuencia mensual -->
     <div id="calculator-section">
     <table id="calculator">
@@ -130,11 +127,9 @@
         <td id="totalHealthatom">$0</td>
         <td id="totalHealthatom">$0</td>
       </tr>
-      </table>
+    </table>
     </div>
-  </td>
-  </tr>
-  </table>
+
 
     <!-- descripción de planes -->
     <div id="benefits-section">
