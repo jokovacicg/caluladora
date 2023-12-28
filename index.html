@@ -22,9 +22,9 @@
     <table>
     <tr>
     <td >
-    <!-- Formulario -->
-    <div id="formulario-section">
-      <table id="formulario">
+    <!-- Calculator Section -->
+    <div id="calculator-section">
+      <table id="calculator">
         <tr>
           <th colspan="2">¿Qué incluye la tarifa?</th>
         </tr>
@@ -47,7 +47,7 @@
               <option value="Dentalink">Argentina</option> </select></td>
         </tr>
         <tr>
-          <td><em>Moneda</em></td>
+          <td>Moneda</td>
           <td><em>Moneda</em></td>
         </tr>
         <tr>
@@ -101,41 +101,41 @@
       <button onclick="calculateCommissions()">Calcular</button>
       <div id="error-message" style="color: red; text-align: center;"></div>
     </div>
-    </td>
+    </td>     
   <td>
     <!-- Tabla precios planes frecuencia mensual -->
-    <table>
+    <div id="calculator-section">
+    <table id="calculator">
       <tr> 
-        <td><em>Plan</em></td>
-        <td><em>Mensual</em></td>
-        <td><em>Semestral</em></td>
-        <td><em>Anual</em></td>
+        <th>Plan</th>
+        <th>Mensual</th>
+        <th>Semestral</th>
+        <th>Anual</th>
       </tr>
       <tr> 
-        <td><em>Basic</em></td>
-        <td colspan="2" id="totalHealthatom">$0</td>
-        <td colspan="2" id="totalHealthatom">$0</td>
-        <td colspan="2" id="totalHealthatom">$0</td>
-        <td colspan="2" id="totalHealthatom">$0</td>
+        <th>Basic</th>
+        <td id="totalHealthatom">$0</td>
+        <td id="totalHealthatom">$0</td>
+        <td id="totalHealthatom">$0</td>
       </tr>
       <tr> 
-        <td><em>Pro</em></td>
-        <td colspan="2" id="totalHealthatom">$0</td>
-        <td colspan="2" id="totalHealthatom">$0</td>
-        <td colspan="2" id="totalHealthatom">$0</td>
-        <td colspan="2" id="totalHealthatom">$0</td>
+        <th>Pro</th>
+        <td id="totalHealthatom">$0</td>
+        <td id="totalHealthatom">$0</td>
+        <td id="totalHealthatom">$0</td>
       </tr>
       <tr> 
-        <td><em>Titanium</em></td>
-        <td colspan="2" id="totalHealthatom">$0</td>
-        <td colspan="2" id="totalHealthatom">$0</td>
-        <td colspan="2" id="totalHealthatom">$0</td>
-        <td colspan="2" id="totalHealthatom">$0</td>
+        <th>Titanium</th>
+        <td id="totalHealthatom">$0</td>
+        <td id="totalHealthatom">$0</td>
+        <td id="totalHealthatom">$0</td>
       </tr>
-    </table> 
+      </table>
+    </div>
   </td>
   </tr>
-  </table>     
+  </table>
+
     <!-- descripción de planes -->
     <div id="benefits-section">
       <h2>¿Cuál es la diferencia de cada plan?</h2>
